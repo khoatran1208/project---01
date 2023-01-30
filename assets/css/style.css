@@ -1,14 +1,13 @@
 * {
   box-sizing: border-box;
 }
+html {
+  scroll-behavior: smooth;
+}
 :root {
   --primary-color: #0f1b4c;
 }
 
-html,
-body {
-  scroll-behavior: smooth;
-}
 html {
   font-size: 62.5%;
 }
@@ -30,7 +29,7 @@ a {
 .hero-header {
   position: relative;
   background-color: #e6f0ff;
-  height: calc( 102vh - 90px);
+  height: calc(102vh - 90px);
 }
 
 .content {
