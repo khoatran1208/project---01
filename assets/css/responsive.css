@@ -1,0 +1,152 @@
+@media (min-width: 1024px) and (max-width: 1239px) {
+  .nav-bar {
+    display: block;
+  }
+  .info-hero h1 {
+    font-size: 6.4rem;
+  }
+  .renter-guildes {
+    margin: 0px;
+  }
+  .thump {
+    height: 227px;
+  }
+  .img-data .img {
+    width: 400px;
+    height: 460px;
+  }
+  .info-img-data {
+    position: absolute;
+    width: 239px;
+    height: 252px;
+    margin-left: -5px;
+  }
+  .sub-info {
+    padding-left: 80px;
+  }
+  .row-company,
+  .row-get {
+    margin-top: 0px;
+  }
+  .logo-brand ul {
+    overflow-x: hidden;
+    justify-content: space-between;
+    overflow-x: auto;
+  }
+  .nav-mobile {
+    display: none;
+  }
+}
+
+@media (min-width: 1113px) {
+  .nav-bar {
+    display: block;
+  }
+  .info-hero h1 {
+    font-size: 6.4rem;
+  }
+  .renter-guildes {
+    margin: 0px;
+  }
+  .sub-featured a {
+    display: flex;
+    justify-content: flex-end;
+  }
+  .thump {
+    height: 227px;
+  }
+  .info-img {
+    padding-left: 165px;
+  }
+  .img-data .img {
+    width: 400px;
+    height: 460px;
+  }
+  .info-img-data {
+    position: absolute;
+    width: 239px;
+    height: 252px;
+    margin-left: 70px;
+  }
+  .info-img h2 {
+    width: 269px;
+  }
+  .info-img p {
+    width: 309px;
+  }
+  .sub-info {
+    padding-left: 80px;
+  }
+  .row-company,
+  .row-get {
+    margin-top: 0px;
+  }
+  .footer-end p {
+    margin-top: 0px;
+  }
+  .logo-brand ul {
+    overflow-x: hidden;
+    justify-content: space-between;
+  }
+  .nav-mobile {
+    display: none;
+  }
+  
+}
+@media (min-width: 740px) and (max-width: 1023px) {
+  .renter-guildes {
+    margin: 0px;
+  }
+  .img-data .img {
+    width: 300px;
+    height: 460px;
+  }
+  .info-img-data {
+    position: absolute;
+    width: 239px;
+    height: 252px;
+    margin-left: -20px;
+  }
+  .sub-info {
+    padding-left: 80px;
+  }
+  .row-company,
+  .row-get {
+    margin-top: 30px;
+  }
+  
+}
+
+@media (min-width: 740px) {
+  .sub-featured a {
+    margin-top: 0px;
+  }
+  .rows-data .colump:first-child {
+    margin-top: 100px;
+  }
+  .row-resources {
+    margin-top: 0px;
+  }
+}
+
+@media (max-width: 600px) {
+  .info-img {
+    position: relative;
+    margin-top: 0px;
+    top: -550px;
+  }
+
+  .img-data {
+    position: relative;
+    top: 300px;
+  }
+  .sub-img .phone-sub {
+    display: none;
+  }
+  .btn-sub a {
+    margin-top: 100px;
+  }
+  .rows-data {
+    margin-top: 200px;
+  }
+}

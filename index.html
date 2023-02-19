@@ -4,18 +4,25 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>project-01</title>
+    <title>Project-01</title>
     <link rel="stylesheet" href="./assets/css/reset.css" />
     <link rel="stylesheet" href="./assets/fonts/stylesheets.css" />
+    <link
+      rel="stylesheet"
+      href="./assets/fonts/fontawesome-free-6.2.1-web/css/all.min.css"
+    />
+    <link rel="stylesheet" href="./assets/css/grid.css" />
     <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="./assets/css/responsive.css" />
   </head>
   <body>
-    <main>
-      <div class="header">
-        <div class="content">
-          <nav class="navbar">
+    <div class="header">
+      <div class="content grid wide">
+        <div class="nav-bar">
+          <div class="navbar">
             <!-- logo -->
             <a href="#"><img src="./assets/img/Logo.svg" alt="" /></a>
+  
             <!-- navigation -->
             <ul class="navigation">
               <li><a href="#">Home</a></li>
@@ -24,19 +31,50 @@
               <li><a href="#resources">Resources</a></li>
               <li><a href="#contact">Contact</a></li>
             </ul>
+  
             <!-- action -->
             <div class="action">
               <a class="action-sign-in" href="#!">Sign in</a>
               <a class="btn sign-up" href="#!">Sign up</a>
             </div>
-          </nav>
+          </div>
+        </div >
+        <!-- nav mobile -->
+        <div class="nav-mobile">
+         <div class="header-mobile">
+            <label for="nav-mobile-input" class="fa-solid fa-bars"></label>
+            <a href="#"><img src="./assets/img/Logo.svg" alt="" /></a>
+         </div >
+          <input
+            hidden
+            type="checkbox"
+            name=""
+            class="nav-mobile"
+            id="nav-mobile-input"
+          />
+          <label for="nav-mobile-input" class="nav-overlay"></label>
+          <ul class="navigation-mobile">
+            <div class="icon-exit">
+              <label
+                for="nav-mobile-input"
+                class="fa-regular fa-circle-xmark"
+              ></label>
+            </div>
+            <li><a href="#">Home</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#features">Features</a></li>
+            <li><a href="#resources">Resources</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
         </div>
       </div>
+    </div>
+    <main>
       <!-- Header -->
       <header class="hero-header">
-        <div class="content">
-          <div class="hero">
-            <div class="info-hero">
+        <div class="content grid wide">
+          <div class="hero row">
+            <div class="info-hero col l-6 m-6 c-12">
               <p>Welcome to Besnik Agency</p>
               <h1>Discover a place you'll love to live.</h1>
               <p>
@@ -45,7 +83,7 @@
               </p>
               <a class="btn button-herro" href="#!">More About Us</a>
             </div>
-            <div class="house-hero">
+            <div class="house-hero col l-6 m-6 c-12">
               <img src="./assets/img/house illustration.svg" alt="" />
             </div>
           </div>
@@ -53,21 +91,25 @@
       </header>
       <!-- Clints -->
       <div class="clints">
-        <div class="content">
-          <div class="logo-stars">
-            <img src="./assets/img/Logo.svg" alt="" />
-            <ul>
-              <li><img src="./assets/img/stars.svg" alt="" /></li>
-              <li><img src="./assets/img/stars.svg" alt="" /></li>
-              <li><img src="./assets/img/stars.svg" alt="" /></li>
-              <li><img src="./assets/img/stars.svg" alt="" /></li>
-              <li><img src="./assets/img/stars.svg" alt="" /></li>
-            </ul>
-          </div>
+        <div class="content grid wide">
+          <div>
+            <div class="logo-stars">
+              <img src="./assets/img/Logo.svg" alt="" />
+              <ul>
+                <li><img src="./assets/img/stars.svg" alt="" /></li>
+                <li><img src="./assets/img/stars.svg" alt="" /></li>
+                <li><img src="./assets/img/stars.svg" alt="" /></li>
+                <li><img src="./assets/img/stars.svg" alt="" /></li>
+                <li><img src="./assets/img/stars.svg" alt="" /></li>
+              </ul>
+            </div>
 
-          <div class="sub-clints">
-            <p>More than 45,000+ companies trust besnik</p>
-            <p>5 Star Ratings (2k+ Review)</p>
+            <div class="sub-clints row">
+              <p class="col l-6 m-6 c-5">
+                More than 45,000+ companies trust besnik
+              </p>
+              <p class="col l-6 m-6 c-7">5 Star Ratings (2k+ Review)</p>
+            </div>
           </div>
 
           <div id="services" class="logo-brand">
@@ -75,24 +117,23 @@
               <li><img src="./assets/img/brand-1.svg" alt="" /></li>
               <li><img src="./assets/img/brand-2.svg" alt="" /></li>
               <li><img src="./assets/img/brand-3.svg" alt="" /></li>
-              <li><img src="./assets/img/brand-4.svg" alt="" /></li>
               <li><img src="./assets/img/brand-5.svg" alt="" /></li>
             </ul>
           </div>
         </div>
       </div>
       <!-- Guildes -->
-      <div class="guildes">
+      <div class="guildes grid wide">
         <div class="content">
-          <div class="sub-guildes">
-            <h2>How its works?</h2>
-            <p>
+          <div class="sub-guildes row">
+            <h2 class="col l-12 m-12 c-12">How its works?</h2>
+            <p class="col l-12 m-12 c-12">
               Everything you need to know when you're looking to buy, rent, or
               sell - all in one place.
             </p>
           </div>
-          <div class="logo-guildes">
-            <div class="buyer">
+          <div class="logo-guildes row">
+            <div class="buyer col l-4 m-4 c-12">
               <img src="./assets/img/buyer-logo.svg" alt="" />
               <h3>Buyer Guides</h3>
               <div class="arrows">
@@ -100,7 +141,7 @@
                 <img src="./assets/img/arrow.svg" alt="" />
               </div>
             </div>
-            <div class="renter-guildes">
+            <div class="renter-guildes col l-4 m-4 c-12">
               <img src="./assets/img/renter-logo.svg" alt="" />
               <h3>Renter Guides</h3>
               <div class="arrows">
@@ -108,7 +149,7 @@
                 <img src="./assets/img/arrow.svg" alt="" />
               </div>
             </div>
-            <div class="seller">
+            <div class="seller col l-4 m-4 c-12">
               <img src="./assets/img/seller-logo.svg" alt="" />
               <h3>Seller Guides</h3>
               <div class="arrows">
@@ -124,39 +165,43 @@
       </div>
       <!-- Featured -->
       <div id="features" class="featured">
-        <div class="content">
+        <div class="content grid wide">
           <div class="info-featured">
             <h2>Featured Properties</h2>
-            <div class="sub-featured">
-              <p>Everything you need to know when you're looking</p>
-              <a href="#!"
+            <div class="sub-featured row">
+              <p class="col l-9 m-9 c-12">
+                Everything you need to know when you're looking
+              </p>
+              <a class="col l-3 m-3 c-12" href="#!"
                 >View All Properties <img src="./assets/img/arrow.svg" alt=""
               /></a>
             </div>
           </div>
-          <div class="img-featured">
-            <div class="img-featured-1">
-              <img class="thump" src="./assets/img/ronaldo.jpg" alt="" />
-              <div class="info-img-1">
-                <h3><a href="#!">Nikko Apartments</a></h3>
-                <p>8502 Preston Rd. Inglewood, Maine 98280</p>
-                <div class="labal-featured">
-                  <div>
-                    <img src="./assets/img/beds.svg" alt="" />
-                    <span>5 Beds</span>
-                  </div>
-                  <div>
-                    <img src="./assets/img/both.svg" alt="" />
-                    <span>2 both</span>
-                  </div>
-                  <div>
-                    <img src="./assets/img/sqft.svg" alt="" />
-                    <span>2000 Sqft</span>
+          <div class="img-featured row">
+            <div class="col l-4 m-6 c-12">
+              <div class="img-featured-1">
+                <img class="thump" src="./assets/img/Nikko.png" alt="" />
+                <div class="info-img-1">
+                  <h3><a href="#!">Nikko Apartments</a></h3>
+                  <p>8502 Preston Rd. Inglewood, Maine 98280</p>
+                  <div class="labal-featured">
+                    <div>
+                      <img src="./assets/img/beds.svg" alt="" />
+                      <span>3 Beds</span>
+                    </div>
+                    <div>
+                      <img src="./assets/img/both.svg" alt="" />
+                      <span>2 baths</span>
+                    </div>
+                    <div>
+                      <img src="./assets/img/sqft.svg" alt="" />
+                      <span>2000 Sqft</span>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
-            <div class="img-featured-2">
+            <div class="img-featured-2 col l-4 m-6 c-12">
               <img class="thump" src="./assets/img/coucou.png" alt="" />
               <div class="info-img-2">
                 <h3><a href="#!">CouCou Homestead</a></h3>
@@ -177,23 +222,25 @@
                 </div>
               </div>
             </div>
-            <div class="img-featured-3">
-              <img class="thump" src="./assets/img/house.jpg" alt="" />
-              <div class="info-img-3">
-                <h3><a href="#!">Lavis 18 Residence</a></h3>
-                <p>8502 Preston Rd. Inglewood, Maine 98280</p>
-                <div id="resources" class="labal-featured">
-                  <div>
-                    <img src="./assets/img/beds.svg" alt="" />
-                    <span>5 Beds</span>
-                  </div>
-                  <div>
-                    <img src="./assets/img/both.svg" alt="" />
-                    <span>2 both</span>
-                  </div>
-                  <div>
-                    <img src="./assets/img/sqft.svg" alt="" />
-                    <span>2000 Sqft</span>
+            <div class="col l-4 m-6 c-12">
+              <div class="img-featured-3">
+                <img class="thump" src="./assets/img/house.jpg" alt="" />
+                <div class="info-img-3">
+                  <h3><a href="#!">Lavis 18 Residence</a></h3>
+                  <p>8502 Preston Rd. Inglewood, Maine 98280</p>
+                  <div id="resources" class="labal-featured">
+                    <div>
+                      <img src="./assets/img/beds.svg" alt="" />
+                      <span>5 Beds</span>
+                    </div>
+                    <div>
+                      <img src="./assets/img/both.svg" alt="" />
+                      <span>2 both</span>
+                    </div>
+                    <div>
+                      <img src="./assets/img/sqft.svg" alt="" />
+                      <span>2000 Sqft</span>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -203,9 +250,9 @@
       </div>
       <!-- Data -->
       <div class="data">
-        <div class="content">
-          <div class="info-data">
-            <div class="img-data">
+        <div class="content grid wide">
+          <div class="info-data row">
+            <div class="img-data col l-6 m-6 c-12">
               <img class="img" src="./assets/img/ronaldo.jpg" alt="" />
               <div class="info-img-data">
                 <div class="sub-img-data">
@@ -257,7 +304,7 @@
                 </div>
               </div>
             </div>
-            <div class="info-img">
+            <div class="info-img col l-6 m-6 c-12">
               <h2>You’ve found a neighborhood you love.</h2>
               <p>
                 When you own a home, you’re committing to living in one location
@@ -266,16 +313,16 @@
               </p>
             </div>
           </div>
-          <div class="rows-data">
-            <div class="colump">
-              <strong>2500</strong>
+          <div class="rows-data row">
+            <div class="colump col l-4 m-4 c-12">
+              <strong>2,500</strong>
               <p>Homes For Sale</p>
             </div>
-            <div class="colump">
-              <strong>5000+</strong>
+            <div class="colump col l-4 m-4 c-12">
+              <strong>5,000+</strong>
               <p>Homes Recently Sold</p>
             </div>
-            <div class="colump">
+            <div class="colump col l-4 m-4 c-12">
               <strong>170+</strong>
               <p>Price Reduced</p>
             </div>
@@ -284,16 +331,16 @@
       </div>
       <!-- Subscribe -->
       <div id="contact" class="subscribe">
-        <div class="content">
-          <div class="subscribe-background">
-            <div class="sub-info">
+        <div class="content grid wide">
+          <div class="subscribe-background row">
+            <div class="sub-info col l-7 m-6 c-12">
               <h2>Subscribe to our Newsletter!</h2>
               <p>Subscribe to our newsletter and stay updated.</p>
               <div class="btn-sub">
                 <a href="#!">Subscribe</a>
               </div>
             </div>
-            <div class="sub-img">
+            <div class="sub-img col l-5 m-6 c-12">
               <img class="phone-sub" src="./assets/img/phone-sub.svg" alt="" />
             </div>
           </div>
@@ -301,9 +348,9 @@
       </div>
       <!-- Footer -->
       <div class="footer">
-        <div class="content">
-          <div class="colump-footer">
-            <div class="row-product">
+        <div class="content grid wide">
+          <div class="colump-footer row">
+            <div class="row-product col l-3 m-6 c-12">
               <h3>Product</h3>
               <div class="colump-info">
                 <a href="#!">Listing</a>
@@ -312,7 +359,7 @@
                 <a href="#!">Blog</a>
               </div>
             </div>
-            <div class="row-resources">
+            <div class="row-resources col l-3 m-6 c-12">
               <h3>Resources</h3>
               <div class="colump-info">
                 <a href="#!">Our Homes</a>
@@ -321,7 +368,7 @@
                 <a href="#!">Free trial</a>
               </div>
             </div>
-            <div class="row-company">
+            <div class="row-company col l-3 m-6 c-12">
               <h3>Company</h3>
               <div class="colump-info">
                 <a href="#!">Patnerships</a>
@@ -330,7 +377,7 @@
                 <a href="#!">Sitemap</a>
               </div>
             </div>
-            <div class="row-get">
+            <div class="row-get col l-3 m-6 c-12">
               <h3>Get in touch</h3>
               <div class="colump-info">
                 <p>You’ll find your next home, in any style you prefer.</p>
@@ -348,9 +395,11 @@
               </div>
             </div>
           </div>
-          <div class="footer-end">
-            <img src="./assets/img/Logo.svg" alt="" />
-            <p>Copyright 2020.com, All rights reserved.</p>
+          <div class="footer-end row">
+            <div class="col l-6 c-12">
+              <img src="./assets/img/Logo.svg" alt="" />
+            </div>
+            <p>Copyright 2023.com, All rights reserved.</p>
           </div>
         </div>
       </div>
