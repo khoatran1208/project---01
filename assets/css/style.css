@@ -678,13 +678,20 @@ a {
 
 .navigation-mobile li {
   display: block;
-  text-align: center;
-  margin-top: 40px;
+  text-align: center;   
+  border-top: 1px solid #ececec;
 }
 .navigation-mobile li a {
+  display: block;
+  padding-top: 20px;
+  padding-bottom: 20px;
   color: #1c1c1d;
   font-size: 2rem;
 }
+.navigation-mobile li:hover {
+  background-color:rgba(102,102,102,0.5);
+}
+
 .fa-regular.fa-circle-xmark {
   position: absolute;
   cursor: pointer;
@@ -699,7 +706,18 @@ a {
 .nav-mobile:checked ~ .navigation-mobile {
   transform: translateX(0%);
 }
+.action.mobile {
+  margin-top: 50px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
 
+.btn.sign-up.mobile {
+  margin-left: 0px;
+  margin-top: 20px;
+}
 /* animation */
 @keyframes appear {
   from {
